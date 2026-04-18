@@ -17,7 +17,8 @@ Recettes_app/
 ├── data/
 │   └── recipes.xml          # Données XML (recettes)
 ├── docs/
-│   └── README.txt           # Notes détaillées (interprétation des données, contraintes)
+│   ├── RAPPORT.md           # Rapport de projet (objectifs, architecture, choix techniques)
+│   └── README.txt           # Notes courtes (lancement, interprétation des données)
 ├── src/
 │   └── recettes/            # Paquet Python
 │       ├── __init__.py
@@ -26,10 +27,12 @@ Recettes_app/
 │       └── presentation.py  # Menu interactif, état immuable
 ├── main.py                  # Point d’entrée
 ├── test_project.py          # Tests manuels
-├── requirements.txt
-├── README.md                # Ce fichier (vue GitHub)
-└── README.txt               # Renvoi vers la doc dans docs/
+├── README.md                # Documentation (vue GitHub)
+└── requirements.txt
 ```
+
+- **Rapport de projet** : [`docs/RAPPORT.md`](docs/RAPPORT.md)  
+- **Notes techniques** (lancement, XML) : [`docs/README.txt`](docs/README.txt)
 
 ## Prérequis
 
@@ -72,7 +75,7 @@ Le cœur du projet utilise la bibliothèque standard (`xml.etree`, `collections`
 
 ## Interprétation des données
 
-Les règles détaillées (étapes au niveau recette, ingrédients feuilles, etc.) sont dans [`docs/README.txt`](docs/README.txt).
+Voir le **rapport** : [`docs/RAPPORT.md`](docs/RAPPORT.md) (section 4). Les règles courtes sont aussi dans [`docs/README.txt`](docs/README.txt).
 
 ## Auteur
 

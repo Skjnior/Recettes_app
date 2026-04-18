@@ -1,11 +1,16 @@
 Projet : traitement de recettes en programmation fonctionnelle (Python)
 ========================================================================
 
+Rapport complet (objectifs, architecture, tableau des fonctionnalités, hypothèses) :
+  docs/RAPPORT.md
+
+Ce fichier (README.txt) résume le lancement et l’interprétation des données.
+
 Architecture des dossiers
 -------------------------
   data/          Fichiers de données (recipes.xml).
   src/recettes/  Code source du paquet : models, repositories, presentation.
-  docs/          Cette documentation.
+  docs/          Documentation (rapport, ce fichier).
 
 Fichiers principaux
 ---------------------
@@ -33,13 +38,13 @@ Menu interactif : taper 0 ou q (ou quitter) pour sortir ; t / g pour le mode tex
 
 Interprétation des données
 --------------------------
-- Les étapes d’une recette sont les <rcp:step> des <rcp:preparation> directement sous
-  <rcp:recipe> (pas les préparations imbriquées dans les groupes d’ingrédients).
-- Les ingrédients « feuilles » servent au décompte, aux filtres beurre / huile d’olive,
+- Les étapes d'une recette sont les <rcp:step> des <rcp:preparation> directement sous
+  <rcp:recipe> (pas les préparations imbriquées dans les groupes d'ingrédients).
+- Les ingrédients « feuilles » servent au décompte, aux filtres beurre / huile d'olive,
   aux œufs (nom contenant « egg »), et au dictionnaire ingrédient → recettes.
 - Les calories et pourcentages viennent de <rcp:nutrition>.
 
 Contraintes du sujet
 --------------------
 Structures immuables (tuple, frozenset, dataclasses frozen) ; fonctions pures dans
-repositories ; l’UI remplace l’état au lieu de le muter en place.
+repositories ; l'UI remplace l'état au lieu de le muter en place.
